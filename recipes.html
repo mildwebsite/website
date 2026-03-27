@@ -141,12 +141,13 @@
             padding: 32px 32px 40px !important;
         }
         .rcard-img-wrap-big {
-            width: 543px !important;
-            height: 543px !important;
+            width: min(543px, 56%) !important;
+            aspect-ratio: 1 / 1 !important;
+            height: auto !important;
         }
         .rcard-img-big {
-            width: 543px !important;
-            height: 543px !important;
+            width: 100% !important;
+            height: 100% !important;
         }
         .rcard-name-big {
             font-size: 32px !important;
@@ -303,15 +304,16 @@
             position: relative;
             align-self: center;
             margin-top: 0;
-            width: 264px;
-            height: 264px;
+            width: min(264px, 56%);
+            aspect-ratio: 1 / 1;
             flex-shrink: 0;
             overflow: visible;
             border-radius: 50%;
         }
 
         .rcard-img {
-            width: 264px; height: 264px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
